@@ -35,30 +35,37 @@ function playRound() {
     console.log("Player:", player);
     console.log("Computer:", computer);
             
-  if (player === computer){ // input if you tie.
+  if (player === computer){ // Output if you tie.
     console.log(player + " It's a tie! Try again.");
 
-    // input if you Lose.
+    // Output if you Lose.
     } else if (player === "rock" && computer === "paper") {
+        computerScore++;
         console.log("paper beats rock! Try Again.");
     }else if(player === "paper" && computer === "scissors"){
+        computerScore++;
         console.log("scissors beat paper! Try Again.");
     }else if(player === "scissors" && computer === "rock"){
+        computerScore++;
         console.log("rock beats scissors! try again");
-    // input if you WIN
+
+    // Output if you WIN
     } else if (player === "rock" && computer === "scissors"){
+        humanScore++;
         console.log("rock beats scissors. You Win!");
     }else if(player === "paper" && computer === "rock"){
+        humanScore++;
         console.log("paper beat rock. You Win!");
     }else if(player === "scissors" && computer === "paper"){
+        humanScore++;
         console.log("scissors beats paper. You Win!");
     }else{
         prompt("Invalid input. Please enter rock, paper, or scissors.")
         playRound(console.log());
     }};
-playRound([5]);
+playRound(); 
 
-    // function playRound(getComputerChoice, userInput) {
-    // if (getComputerChoice === userInput) {
-    //     return console.log(" its a tie");
-    // }
+/* GOAL: at the end of each round show the score depending on where
+what player wins. the score for the player/computer changes accordingly  */
+
+
