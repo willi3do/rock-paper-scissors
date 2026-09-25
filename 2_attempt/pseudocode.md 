@@ -1,0 +1,8 @@
+// rock papper scissors game
+
+// need the Computer choice
+// return a random index from rock, paper, scissors
+// start wiht a function named getComputerChoice
+
+//human choice
+// function that takes a user choice and returns it
